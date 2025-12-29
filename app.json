@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "PennyWise",
+    "slug": "pennywise",
+    "version": "1.0.0",
+    "scheme": "pennywise",
+    "platforms": ["ios", "android"],
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true,
+      "tsconfigPaths": true
+    },
+    "extra": {
+      "supabaseUrl": "https://fxfnygzhzaztimdxvxex.supabase.co",
+      "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ4Zm55Z3poemF6dGltZHh2eGV4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE4MjE0OTksImV4cCI6MjA3NzM5NzQ5OX0.V13pEQL1WZ3VXpP6CmYcSjtV5f6Ns8sjI4xzIB_fjUc"
+    },
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tracker.pennywise",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "NSCameraUsageDescription": "PennyWise needs camera access to scan receipts",
+        "NSPhotoLibraryUsageDescription": "PennyWise needs photo library access to attach receipt images"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.tracker.pennywise",
+      "versionCode": 1,
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"]
+    }
+  }
+}
